@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nome": "Dra. Mariana Alves",
+    "especialidade": "Clínica Geral",
+    "disponibilidade": [
+      {
+        "data": "2026-09-21",
+        "horarios": ["08:00", "09:00", "10:00", "14:00", "15:00"]
+      },
+      {
+        "data": "2026-09-23",
+        "horarios": ["08:00", "09:00", "11:00", "14:00", "16:00"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "disponibilidade": [
+      {
+        "data": "2026-09-22",
+        "horarios": ["09:00", "10:00", "11:00", "15:00", "16:00"]
+      },
+      {
+        "data": "2026-09-24",
+        "horarios": ["08:00", "10:00", "13:00", "14:00", "16:00"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Dr. Lucas Oliveira",
+    "especialidade": "Cardiologia",
+    "disponibilidade": [
+      {
+        "data": "2026-09-21",
+        "horarios": ["08:30", "09:30", "10:30", "14:30", "15:30"]
+      },
+      {
+        "data": "2026-09-25",
+        "horarios": ["08:30", "10:30", "13:30", "14:30", "16:30"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Dra. Camila Martins",
+    "especialidade": "Cardiologia",
+    "disponibilidade": [
+      {
+        "data": "2026-09-22",
+        "horarios": ["08:00", "09:00", "10:00", "14:00", "15:00"]
+      },
+      {
+        "data": "2026-09-24",
+        "horarios": ["09:00", "10:00", "11:00", "15:00", "16:00"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "Dra. Ana Souza",
+    "especialidade": "Nutrição",
+    "disponibilidade": [
+      {
+        "data": "2026-09-21",
+        "horarios": ["08:00", "09:00", "10:00", "13:00", "14:00"]
+      },
+      {
+        "data": "2026-09-23",
+        "horarios": ["09:00", "10:00", "11:00", "14:00", "15:00"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "Dra. Beatriz Lima",
+    "especialidade": "Psicologia",
+    "disponibilidade": [
+      {
+        "data": "2026-09-22",
+        "horarios": ["08:00", "09:00", "10:00", "14:00", "15:00"]
+      },
+      {
+        "data": "2026-09-25",
+        "horarios": ["09:00", "10:00", "11:00", "15:00", "16:00"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "id": 1789717441534,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-24",
+    "horario": "16:00",
+    "status": "cancelado"
+  },
+  {
+    "id": 1789717476653,
+    "usuarioId": 1789717081881,
+    "profissionalId": 4,
+    "profissionalNome": "Dra. Camila Martins",
+    "especialidade": "Cardiologia",
+    "data": "2026-09-24",
+    "horario": "16:00"
+  },
+  {
+    "id": 1789718005670,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-22",
+    "horario": "09:00"
+  },
+  {
+    "id": 1789719266290,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-22",
+    "horario": "11:00",
+    "status": "cancelado"
+  },
+  {
+    "id": 1789719315873,
+    "usuarioId": 1789717081881,
+    "profissionalId": 6,
+    "profissionalNome": "Dra. Beatriz Lima",
+    "especialidade": "Psicologia",
+    "data": "2026-09-22",
+    "horario": "10:00"
+  },
+  {
+    "id": 1789719538291,
+    "usuarioId": 1789717081881,
+    "profissionalId": 3,
+    "profissionalNome": "Dr. Lucas Oliveira",
+    "especialidade": "Cardiologia",
+    "data": "2026-09-21",
+    "horario": "10:30"
+  },
+  {
+    "id": 1789777422237,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-22",
+    "horario": "15:00"
+  },
+  {
+    "id": 1789781221513,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-24",
+    "horario": "16:00"
+  },
+  {
+    "id": 1789781431429,
+    "usuarioId": 1789717081881,
+    "profissionalId": 4,
+    "profissionalNome": "Dra. Camila Martins",
+    "especialidade": "Cardiologia",
+    "data": "2026-09-22",
+    "horario": "10:00",
+    "status": "cancelado"
+  },
+  {
+    "id": 1789782364052,
+    "usuarioId": 1789717081881,
+    "profissionalId": 2,
+    "profissionalNome": "Dr. Rafael Costa",
+    "especialidade": "Clínica Geral",
+    "data": "2026-09-22",
+    "horario": "11:00"
+  },
+  {
+    "id": 1789782567017,
+    "usuarioId": 1789717081881,
+    "profissionalId": 3,
+    "profissionalNome": "Dr. Lucas Oliveira",
+    "especialidade": "Cardiologia",
+    "data": "2026-09-21",
+    "horario": "09:30",
+    "cpf": "12345678919"
+  }
+]

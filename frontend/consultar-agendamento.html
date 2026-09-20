@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultar agendamento | Vida+</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header-principal">
+
+        <div class="logo-principal">
+            <span>✚</span> Vida+
+        </div>
+
+        <nav class="menu-principal">
+            <a href="index.html">Início</a>
+            <a href="index.html#especialistas">Especialistas</a>
+            <a href="meus-agendamentos.html">Meus agendamentos</a>
+            <a href="consultar-agendamento.html">Consultar agendamento</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main-consulta-agendamento">
+
+        <div class="cabecalho-consulta">
+
+            <span class="mini-titulo">
+                CONSULTA
+            </span>
+
+            <h1>Consulte seu agendamento</h1>
+
+            <p>
+                Informe seu CPF para encontrar seu agendamento.
+            </p>
+
+        </div>
+
+
+        <!-- PESQUISA POR CPF -->
+        <div class="card-consulta-cpf">
+
+            <label for="cpfConsulta">
+                CPF
+            </label>
+
+            <div class="campo-consulta-cpf">
+
+                <input
+                    type="text"
+                    id="cpfConsulta"
+                    placeholder="000.000.000-00"
+                >
+
+                <button id="btnConsultarCpf">
+                    Consultar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESULTADO -->
+        <div
+            id="resultadoConsulta"
+            class="resultado-consulta"
+        >
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer-principal">
+
+        <div class="footer-logo">
+            ✚ Vida+
+        </div>
+
+        <p>Vida+ — Cuidando da sua saúde.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

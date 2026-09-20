@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | Vida+</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-info">
+
+            <h1>✚ Vida+</h1>
+
+            <div class="auth-info-content">
+                <h2>
+                    Cuide da sua saúde com
+                    <strong>facilidade</strong>
+                </h2>
+
+                <p>
+                    Agende consultas com especialistas, gerencie seus
+                    atendimentos e cuide do que mais importa — tudo em um só lugar.
+                </p>
+
+                <div class="beneficio">
+                    📅 Agendamento online em minutos
+                </div>
+
+                <div class="beneficio">
+                    👩‍⚕️ Especialistas disponíveis
+                </div>
+
+                <div class="beneficio">
+                    🔒 Seus dados protegidos com segurança
+                </div>
+            </div>
+
+        </section>
+
+        <section class="auth-form-area">
+
+            <div class="auth-form">
+
+                <h2>Crie sua conta</h2>
+
+                <p>
+                    Preencha seus dados para começar a usar o Vida+.
+                </p>
+
+                <form id="formCadastro">
+
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+<label for="E-mail">E-mail</label> 
+<input 
+    type="text" 
+    id="email" 
+    placeholder="nome@gmail.com" 
+    required 
+>
+
+<label for="cpf">CPF</label>
+<input
+    type="text"
+    id="cpf"
+    placeholder="000.000.000-00"
+    maxlength="14"
+    required
+>
+
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Crie uma senha"
+                        required
+                    >
+
+                    <button type="submit">
+                        Criar conta
+                    </button>
+
+                    <p id="mensagemCadastro"></p>
+
+                </form>
+
+                <p class="auth-link">
+                    Já possui uma conta?
+                    <a href="login.html">Entrar</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

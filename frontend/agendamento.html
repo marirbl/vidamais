@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendar consulta | Vida+</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-agendar">
+
+    <!-- CABEÇALHO -->
+    <header class="header-principal">
+
+        <div class="logo-principal">
+            <span>✚</span> Vida+
+        </div>
+
+        <nav class="menu-principal">
+            <a href="index.html">Início</a>
+            <a href="index.html#especialistas">Especialistas</a>
+            <a href="meus-agendamentos.html">Meus agendamentos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+    <main class="main-agendar">
+
+        <a href="index.html#especialistas" class="voltar-agendar">
+            ← Voltar para especialistas
+        </a>
+
+<div class="cabecalho-agendar">
+
+    <span class="mini-titulo">AGENDAMENTO</span>
+
+    <h1>Agendar consulta</h1>
+
+    <p>
+        Siga os passos abaixo para realizar seu agendamento.
+    </p>
+
+</div>
+
+<!-- ETAPAS DO AGENDAMENTO -->
+<div class="etapas-agendamento">
+
+    <div class="etapa concluida">
+        <span>✓</span>
+        <p>Especialidade</p>
+    </div>
+
+    <div class="linha-etapa concluida"></div>
+
+    <div class="etapa concluida">
+        <span>✓</span>
+        <p>Profissional</p>
+    </div>
+
+    <div class="linha-etapa concluida"></div>
+
+    <div class="etapa ativa">
+        <span>3</span>
+        <p>Data e Hora</p>
+    </div>
+
+    <div class="linha-etapa"></div>
+
+    <div class="etapa">
+        <span>4</span>
+        <p>Seus Dados</p>
+    </div>
+
+</div>
+
+
+        <div class="card-agendamento">
+
+            <!-- PROFISSIONAL -->
+            <div
+                id="profissionalSelecionado"
+                class="profissional-selecionado"
+            >
+
+                <div class="icone-profissional">
+                    ✚
+                </div>
+
+                <div>
+                    <span class="rotulo-profissional">
+                        PROFISSIONAL SELECIONADO
+                    </span>
+
+                    <h2 id="nomeProfissional">
+                        Carregando profissional...
+                    </h2>
+
+                    <p id="especialidadeProfissional"></p>
+                </div>
+
+            </div>
+
+
+            <div class="linha-agendamento"></div>
+
+
+            <!-- DATA E HORÁRIO -->
+            <div class="campos-agendamento">
+
+                <div class="campo-agendamento">
+
+                    <label for="dataConsulta">
+                        Data da consulta
+                    </label>
+
+                    <select id="dataConsulta">
+
+                        <option value="">
+                            Selecione uma data
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo-agendamento">
+
+                    <label for="horarioConsulta">
+                        Horário
+                    </label>
+
+                    <select id="horarioConsulta" disabled>
+
+                        <option value="">
+                            Primeiro selecione uma data
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="aviso-agendamento">
+                <span>✓</span>
+
+                <p>
+                    Confira a data e o horário antes de confirmar
+                    seu agendamento.
+                </p>
+            </div>
+
+
+<button
+    id="btnConfirmarAgendamento"
+    class="btn-confirmar-agendamento"
+>
+    Continuar
+</button>
+        </div>
+
+        <!-- ETAPA 4 - SEUS DADOS -->
+<div id="etapaSeusDados" class="card-agendamento etapa-seus-dados">
+
+    <a href="#" id="voltarDataHorario" class="voltar-agendar">
+        ← Voltar
+    </a>
+
+    <h2>Seus dados</h2>
+
+    <p class="texto-seus-dados">
+        Confira os dados antes de confirmar seu agendamento.
+    </p>
+
+    <div class="resumo-agendamento">
+
+        <span class="mini-titulo">RESUMO DO AGENDAMENTO</span>
+
+        <div class="resumo-grid">
+
+            <p>
+                <strong>Especialidade:</strong>
+                <span id="resumoEspecialidade"></span>
+            </p>
+
+            <p>
+                <strong>Profissional:</strong>
+                <span id="resumoProfissional"></span>
+            </p>
+
+            <p>
+                <strong>Data:</strong>
+                <span id="resumoData"></span>
+            </p>
+
+            <p>
+                <strong>Horário:</strong>
+                <span id="resumoHorario"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="dados-paciente">
+
+        <label for="nomePaciente">Nome completo</label>
+        <input
+            type="text"
+            id="nomePaciente"
+               placeholder="Seu nome."
+    maxlength="50"
+>
+        
+
+<label for="cpfPaciente">CPF</label>
+<input
+    type="text"
+    id="cpfPaciente"
+    placeholder="000.000.000-00"
+    maxlength="14"
+>
+
+    </div>
+
+    <button
+        id="btnFinalizarAgendamento"
+        class="btn-confirmar-agendamento"
+    >
+        Confirmar agendamento
+    </button>
+
+</div>
+
+    </main>
+
+
+    <footer class="footer-principal">
+
+        <div class="footer-logo">
+            ✚ Vida+
+        </div>
+
+        <p>Vida+ — Cuidando da sua saúde.</p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

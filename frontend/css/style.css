@@ -1,0 +1,1874 @@
+/* =========================
+   VIDA+ - ESTILO GERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef6fc;
+    color: #1e293b;
+}
+
+
+/* =========================
+   TELA DE LOGIN
+========================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* LADO AZUL */
+
+.login-banner {
+    width: 50%;
+    min-height: 100vh;
+    padding: 45px 65px;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+        145deg,
+        #0878b7,
+        #1595bd
+    );
+
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #5ee6b5;
+    font-size: 28px;
+}
+
+.banner-conteudo {
+    margin: auto 0;
+    max-width: 500px;
+}
+
+.banner-conteudo h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.banner-conteudo h1 strong {
+    display: block;
+    color: #66e6ad;
+}
+
+.banner-conteudo > p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #e5f5ff;
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.beneficios div {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-banner small {
+    color: #d7effb;
+}
+
+
+/* =========================
+   LADO DIREITO
+========================= */
+
+.login-area {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f9fd;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+}
+
+.login-box h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.subtitulo {
+    color: #718096;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+}
+
+#formLogin label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #374151;
+}
+
+#formLogin input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d7e1ea;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+#formLogin input:focus {
+    border-color: #4297be;
+    box-shadow: 0 0 0 3px rgba(22, 138, 192, 0.1);
+}
+
+
+/* BOTÃO ENTRAR */
+
+#formLogin button {
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #168ac0;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#formLogin button:hover {
+    background: #0875aa;
+}
+
+
+/* MENSAGEM LOGIN */
+
+#mensagemLogin {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CRIAR CONTA
+========================= */
+
+.criar-conta {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.criar-conta p {
+    color: #8a98a8;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.criar-conta a {
+    display: block;
+
+    padding: 14px;
+
+    border: 1px solid #78bce0;
+    border-radius: 8px;
+
+    color: #168ac0;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.criar-conta a:hover {
+    background: #e7f4fb;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    .login-container {
+        display: block;
+    }
+
+    .login-banner {
+        width: 100%;
+        min-height: auto;
+        padding: 35px 25px;
+    }
+
+    .banner-conteudo {
+        margin: 50px 0;
+    }
+
+    .banner-conteudo h1 {
+        font-size: 32px;
+    }
+
+    .login-area {
+        width: 100%;
+        min-height: auto;
+        padding: 60px 25px;
+    }
+
+}
+
+/* =========================
+   TELA DE CADASTRO
+========================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+/* LADO AZUL */
+
+.auth-info {
+    width: 50%;
+    min-height: 100vh;
+    padding: 45px 65px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+        145deg,
+        #0878b7,
+        #1595bd
+    );
+
+    color: white;
+}
+
+.auth-info > h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.auth-info-content {
+    margin: auto 0;
+    max-width: 500px;
+}
+
+.auth-info-content h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.auth-info-content h2 strong {
+    display: block;
+    color: #66e6ad;
+}
+
+.auth-info-content > p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #e5f5ff;
+}
+
+.beneficio {
+    background: rgba(255, 255, 255, 0.14);
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ÁREA DO FORMULÁRIO
+========================= */
+
+.auth-form-area {
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f9fd;
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 430px;
+}
+
+.auth-form h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.auth-form > p {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+/* FORMULÁRIO */
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+#formCadastro label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #374151;
+}
+
+#formCadastro input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d7e1ea;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+#formCadastro input:focus {
+    border-color: #168ac0;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 138, 192, 0.1);
+}
+
+
+/* BOTÃO */
+
+#formCadastro button {
+    height: 48px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #168ac0;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#formCadastro button:hover {
+    background: #0875aa;
+}
+
+
+/* LINK PARA LOGIN */
+
+.auth-link {
+    text-align: center;
+    margin-top: 25px !important;
+
+    font-size: 13px !important;
+    color: #8a98a8 !important;
+}
+
+.auth-link a {
+    color: #168ac0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVO DO CADASTRO
+========================= */
+
+@media (max-width: 800px) {
+
+    .auth-container {
+        display: block;
+    }
+
+    .auth-info {
+        width: 100%;
+        min-height: auto;
+        padding: 35px 25px;
+    }
+
+    .auth-info-content {
+        margin: 50px 0;
+    }
+
+    .auth-info-content h2 {
+        font-size: 32px;
+    }
+
+    .auth-form-area {
+        width: 100%;
+        min-height: auto;
+        padding: 60px 25px;
+    }
+}
+
+/* =========================================
+   PÁGINA INICIAL - VIDA+
+========================================= */
+
+.pagina-inicial {
+    margin: 0;
+    background: #f5f9fc;
+    color: #17233c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+.header-principal {
+    height: 76px;
+    padding: 0 6%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e4edf4;
+}
+
+.logo-principal {
+    font-size: 25px;
+    font-weight: 800;
+    color: #17233c;
+}
+
+.logo-principal span {
+    color: #36dfad;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-principal a:hover,
+.menu-principal .ativo {
+    color: #168fc0;
+}
+
+.btn-sair {
+    background: transparent;
+    border: 1px solid #168fc0;
+    color: #168fc0;
+    padding: 9px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-sair:hover {
+    background: #168fc0;
+    color: white;
+}
+
+
+/* HERO */
+
+.hero-inicio {
+    min-height: 480px;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #eaf7fc 0%,
+            #f5fbfd 55%,
+            #e9f9f4 100%
+        );
+}
+
+.hero-conteudo {
+    max-width: 600px;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: #d8f7ed;
+    color: #168267;
+
+    padding: 8px 14px;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.hero-conteudo #boasVindas {
+    color: #168fc0;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.hero-conteudo h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    color: #17233c;
+}
+
+.hero-conteudo h1 strong {
+    color: #27c99b;
+}
+
+.hero-conteudo p {
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.btn-principal {
+    display: inline-block;
+
+    background: #168fc0;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    padding: 14px 24px;
+    border-radius: 9px;
+
+    transition: 0.2s;
+}
+
+.btn-principal:hover {
+    background: #117ba6;
+    transform: translateY(-2px);
+}
+
+
+/* CARD DO HERO */
+
+.hero-card {
+    width: 350px;
+    background: white;
+
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 45px rgba(31, 73, 99, 0.12);
+}
+
+.icone-saude {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #d9f8ef;
+    color: #27c99b;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.vantagem {
+    padding: 10px 0;
+    color: #526477;
+    font-size: 14px;
+}
+
+
+/* ESPECIALISTAS */
+
+.secao-especialistas {
+    padding: 80px 8%;
+    background: white;
+}
+
+.titulo-secao {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 45px;
+}
+
+.titulo-secao span,
+.mini-titulo {
+    color: #168fc0;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.titulo-secao h2 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.titulo-secao p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+
+/* CARDS DOS MÉDICOS */
+
+.grid-profissionais {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 24px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.grid-profissionais > div {
+    background: white;
+
+    border: 1px solid #e4edf4;
+    border-radius: 16px;
+
+    padding: 28px;
+
+    box-shadow: 0 6px 20px rgba(36, 70, 90, 0.06);
+
+    transition: 0.25s;
+}
+
+.grid-profissionais > div:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(36, 70, 90, 0.12);
+}
+
+.grid-profissionais h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.grid-profissionais p {
+    color: #168fc0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.grid-profissionais a {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    background: #168fc0;
+    color: white;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+.grid-profissionais a:hover {
+    background: #117ba6;
+}
+
+
+/* ÁREA DE AGENDAMENTOS */
+
+.area-agendamentos {
+    margin: 70px 8%;
+    padding: 45px 55px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0e83b2,
+            #1ba7c6
+        );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.area-agendamentos .mini-titulo {
+    color: #8df1d3;
+}
+
+.area-agendamentos h2 {
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+.area-agendamentos p {
+    margin: 0;
+    color: #e1f5fb;
+}
+
+.btn-agendamentos {
+    background: white;
+    color: #168fc0;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    padding: 14px 22px;
+    border-radius: 9px;
+
+    white-space: nowrap;
+}
+
+
+/* FOOTER */
+
+.footer-principal {
+    background: #102c3c;
+    color: #d8e6ed;
+
+    padding: 35px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .header-principal {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-inicio {
+        flex-direction: column;
+        padding: 50px 25px;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 37px;
+    }
+
+    .hero-card {
+        width: auto;
+    }
+
+    .area-agendamentos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 40px 20px;
+        padding: 35px;
+    }
+
+    .footer-principal {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* =========================================
+   MEUS AGENDAMENTOS
+========================================= */
+
+.agendamentos-page {
+    min-height: calc(100vh - 170px);
+    background: #f1f9fd;
+    padding: 60px 8%;
+}
+
+.agendamentos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.agendamentos-topo {
+    margin-bottom: 35px;
+}
+
+.agendamentos-tag {
+    color: #0797c9;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.agendamentos-topo h2 {
+    color: #10264b;
+    font-size: 38px;
+    margin: 8px 0 10px;
+}
+
+.agendamentos-topo > p {
+    color: #63728d;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn-novo-agendamento {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #159ac7;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-novo-agendamento:hover {
+    transform: translateY(-2px);
+}
+
+/* CARD DA CONSULTA */
+
+#listaAgendamentos {
+    display: grid;
+    gap: 20px;
+}
+
+.card-agendamento {
+    background: white;
+    border: 1px solid #dce8ef;
+    border-radius: 18px;
+    padding: 28px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.status-agendamento {
+    display: inline-block;
+    background: #d8f8ec;
+    color: #087a5b;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-agendamento h3 {
+    color: #10264b;
+    font-size: 23px;
+    margin: 0 0 5px;
+}
+
+.especialidade-agendamento {
+    color: #0797c9;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.detalhes-agendamento {
+    display: flex;
+    gap: 30px;
+    color: #52617a;
+}
+
+.detalhes-agendamento p {
+    margin: 0;
+}
+
+/* CANCELAR */
+
+.btn-cancelar {
+    background: white;
+    border: 1px solid #e36b6b;
+    color: #c94545;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-cancelar:hover {
+    background: #fff1f1;
+}
+
+/* QUANDO NÃO HÁ CONSULTAS */
+
+.sem-agendamentos {
+    background: white;
+    border: 1px solid #dce8ef;
+    border-radius: 18px;
+    padding: 45px;
+    text-align: center;
+}
+
+.sem-agendamentos h3 {
+    color: #10264b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sem-agendamentos p {
+    color: #63728d;
+    margin-bottom: 25px;
+}
+
+.sem-agendamentos a {
+    display: inline-block;
+    background: #159ac7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .agendamentos-page {
+        padding: 40px 20px;
+    }
+
+    .agendamentos-topo h2 {
+        font-size: 30px;
+    }
+
+    .card-agendamento {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detalhes-agendamento {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-cancelar {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   MELHORIA - MEUS AGENDAMENTOS
+========================================= */
+
+.agendamentos-page {
+    min-height: calc(100vh - 170px);
+    background: #f3faff;
+    padding: 55px 8% 70px;
+}
+
+.agendamentos-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* TOPO */
+
+.agendamentos-topo {
+    margin-bottom: 32px;
+}
+
+.agendamentos-tag {
+    display: inline-block;
+    color: #0797c9;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.agendamentos-topo h2 {
+    color: #10264b;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 0 0 10px;
+}
+
+.agendamentos-topo > p {
+    color: #66758e;
+    font-size: 16px;
+    margin: 0 0 24px;
+}
+
+/* BOTÃO NOVA CONSULTA */
+
+.btn-novo-agendamento {
+    display: inline-block;
+    background: #159ac7;
+    color: #ffffff;
+    padding: 13px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-novo-agendamento:hover {
+    background: #1088b3;
+    transform: translateY(-2px);
+}
+
+/* ÁREA DOS AGENDAMENTOS */
+
+#listaAgendamentos {
+    display: grid;
+    gap: 20px;
+}
+
+/* QUANDO NÃO EXISTEM CONSULTAS */
+
+.sem-agendamentos {
+    background: #ffffff;
+    border: 1px solid #dce8ef;
+    border-radius: 18px;
+
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 45px 30px;
+
+    box-shadow: 0 8px 30px rgba(18, 58, 92, 0.05);
+}
+
+.sem-agendamentos::before {
+    content: "📅";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+
+    background: #e0f8f1;
+    border-radius: 18px;
+
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sem-agendamentos h3 {
+    color: #10264b;
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.sem-agendamentos p {
+    color: #66758e;
+    font-size: 16px;
+    margin: 0 0 25px;
+}
+
+.sem-agendamentos a {
+    display: inline-block;
+    background: #159ac7;
+    color: #ffffff;
+
+    padding: 12px 22px;
+    border-radius: 9px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.sem-agendamentos a:hover {
+    background: #1088b3;
+    transform: translateY(-2px);
+}
+
+
+/* CARD QUANDO EXISTIR CONSULTA */
+
+.card-agendamento {
+    background: #ffffff;
+    border: 1px solid #dce8ef;
+    border-radius: 18px;
+
+    padding: 28px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    box-shadow: 0 8px 30px rgba(18, 58, 92, 0.05);
+}
+
+.status-agendamento {
+    display: inline-block;
+
+    background: #d9f8ee;
+    color: #087a5b;
+
+    padding: 6px 13px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.card-agendamento h3 {
+    color: #10264b;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+.especialidade-agendamento {
+    color: #0797c9;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+.detalhes-agendamento {
+    display: flex;
+    gap: 30px;
+}
+
+.detalhes-agendamento p {
+    color: #5f6f88;
+    margin: 0;
+}
+
+
+/* BOTÃO CANCELAR */
+
+.btn-cancelar {
+    background: #ffffff;
+    color: #d24b4b;
+
+    border: 1px solid #e6aaaa;
+    border-radius: 9px;
+
+    padding: 11px 18px;
+
+    font-weight: 700;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-cancelar:hover {
+    background: #fff2f2;
+    border-color: #d24b4b;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .agendamentos-page {
+        padding: 35px 20px 50px;
+    }
+
+    .agendamentos-topo h2 {
+        font-size: 31px;
+    }
+
+    .card-agendamento {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detalhes-agendamento {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-cancelar {
+        width: 100%;
+    }
+
+    .sem-agendamentos {
+        min-height: 230px;
+    }
+}
+
+/* =========================================
+   PÁGINA AGENDAR CONSULTA
+========================================= */
+
+.pagina-agendar {
+    background: #eef8fc;
+    min-height: 100vh;
+}
+
+.main-agendar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 40px 80px;
+}
+
+.voltar-agendar {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #1598c7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.voltar-agendar:hover {
+    text-decoration: underline;
+}
+
+.cabecalho-agendar {
+    margin-bottom: 35px;
+}
+
+.mini-titulo {
+    display: block;
+    color: #1598c7;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cabecalho-agendar h1 {
+    font-size: 40px;
+    color: #08224a;
+    margin: 0 0 10px;
+}
+
+.cabecalho-agendar p {
+    color: #60718d;
+    font-size: 17px;
+    margin: 0;
+}
+
+
+/* CARD PRINCIPAL */
+
+.card-agendamento {
+    background: white;
+    border: 1px solid #d8e6ed;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 35px rgba(30, 90, 120, 0.07);
+}
+
+
+/* PROFISSIONAL */
+
+.profissional-selecionado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icone-profissional {
+    width: 65px;
+    height: 65px;
+    background: #d9f7ee;
+    color: #24c99a;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.rotulo-profissional {
+    display: block;
+    color: #1598c7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 5px;
+}
+
+.profissional-selecionado h2 {
+    color: #08224a;
+    font-size: 25px;
+    margin: 0 0 5px;
+}
+
+.profissional-selecionado p {
+    color: #1598c7;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* DIVISÓRIA */
+
+.linha-agendamento {
+    height: 1px;
+    background: #e3edf2;
+    margin: 30px 0;
+}
+
+
+/* CAMPOS */
+
+.campos-agendamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.campo-agendamento {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-agendamento label {
+    color: #08224a;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.campo-agendamento select {
+    width: 100%;
+    height: 52px;
+    padding: 0 15px;
+    border: 1px solid #ccdce5;
+    border-radius: 9px;
+    background: white;
+    color: #253858;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo-agendamento select:focus {
+    border-color: #1598c7;
+    box-shadow: 0 0 0 3px rgba(21, 152, 199, 0.1);
+}
+
+.campo-agendamento select:disabled {
+    background: #f3f6f8;
+    color: #9aa6b2;
+}
+
+
+/* AVISO */
+
+.aviso-agendamento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #effbf7;
+    color: #3f685d;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 25px;
+}
+
+.aviso-agendamento span {
+    color: #24c99a;
+    font-weight: bold;
+}
+
+.aviso-agendamento p {
+    margin: 0;
+}
+
+
+/* BOTÃO */
+
+.btn-confirmar-agendamento {
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    padding: 16px;
+    margin-top: 25px;
+    background: #1598c7;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-confirmar-agendamento:hover {
+    background: #1086b1;
+    transform: translateY(-1px);
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .main-agendar {
+        padding: 35px 20px 60px;
+    }
+
+    .cabecalho-agendar h1 {
+        font-size: 32px;
+    }
+
+    .campos-agendamento {
+        grid-template-columns: 1fr;
+    }
+
+    .card-agendamento {
+        padding: 25px;
+    }
+
+    .profissional-selecionado {
+        align-items: flex-start;
+    }
+}
+
+/* =========================================
+   CORREÇÃO FINAL - AGENDAMENTO
+========================================= */
+
+.pagina-agendar .card-agendamento {
+    display: block !important;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px 40px;
+}
+
+.pagina-agendar .profissional-selecionado {
+    display: flex !important;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.pagina-agendar .profissional-selecionado > div:last-child {
+    display: block;
+}
+
+.pagina-agendar .profissional-selecionado h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    white-space: normal;
+}
+
+.pagina-agendar .linha-agendamento {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 28px 0;
+    background: #e3edf2;
+}
+
+.pagina-agendar .campos-agendamento {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.pagina-agendar .campo-agendamento {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+}
+
+.pagina-agendar .campo-agendamento label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.pagina-agendar .campo-agendamento select {
+    display: block;
+    width: 100% !important;
+    min-width: 0;
+    height: 52px;
+}
+
+.pagina-agendar .aviso-agendamento {
+    display: flex !important;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.pagina-agendar .btn-confirmar-agendamento {
+    display: block;
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .pagina-agendar .campos-agendamento {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-agendar .card-agendamento {
+        padding: 25px 20px;
+    }
+}
+
+.status-agendamento.status-cancelado {
+    background-color: #ffe5e5;
+    color: #d62828;
+}
+
+/* ETAPAS DO AGENDAMENTO */
+
+.etapas-agendamento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px auto 40px;
+    max-width: 650px;
+}
+
+.etapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+}
+
+.etapa span {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #e4ebf2;
+    color: #8191a5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.etapa p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #8191a5;
+}
+
+.etapa.ativa span {
+    background: #1479b8;
+    color: white;
+}
+
+.etapa.ativa p {
+    color: #1479b8;
+    font-weight: 600;
+}
+
+.etapa.concluida span {
+    background: #2fb171;
+    color: white;
+}
+
+.etapa.concluida p {
+    color: #2a9d68;
+}
+
+.linha-etapa {
+    width: 70px;
+    height: 2px;
+    background: #dce5ed;
+    margin-top: 16px;
+}
+
+.linha-etapa.concluida {
+    background: #2fb171;
+}
+
+/* ETAPA 4 - SEUS DADOS */
+
+.etapa-seus-dados {
+    display: none;
+}
+
+.texto-seus-dados {
+    color: #65758b;
+    margin: 8px 0 25px;
+}
+
+.resumo-agendamento {
+    background: #edf7ff;
+    border: 1px solid #b9dcf5;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.resumo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 30px;
+    margin-top: 15px;
+}
+
+.resumo-grid p {
+    margin: 0;
+    color: #42566f;
+}
+
+.dados-paciente {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.dados-paciente label {
+    font-weight: 600;
+    color: #102b50;
+}
+
+.dados-paciente input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d2deea;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #f8fafc;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   CONSULTAR AGENDAMENTO
+======================================== */
+
+.main-consulta-agendamento {
+    min-height: 600px;
+    padding: 70px 20px;
+    background-color: #eef9fd;
+}
+
+.cabecalho-consulta {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.cabecalho-consulta .mini-titulo {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0797cf;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cabecalho-consulta h1 {
+    margin: 0 0 10px;
+    color: #08234c;
+    font-size: 36px;
+}
+
+.cabecalho-consulta p {
+    color: #5f718c;
+    font-size: 16px;
+}
+
+
+/* CARD DA PESQUISA */
+
+.card-consulta-cpf {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #dce8ef;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.card-consulta-cpf label {
+    display: block;
+    margin-bottom: 8px;
+    color: #08234c;
+    font-weight: 700;
+}
+
+.campo-consulta-cpf {
+    display: flex;
+    gap: 10px;
+}
+
+.campo-consulta-cpf input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #cbdbe5;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo-consulta-cpf input:focus {
+    border-color: #149dcc;
+}
+
+.campo-consulta-cpf button {
+    padding: 0 25px;
+    border: none;
+    border-radius: 9px;
+    background-color: #149dcc;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.campo-consulta-cpf button:hover {
+    opacity: 0.9;
+}
+
+
+/* LOCAL ONDE APARECERÁ O AGENDAMENTO */
+
+.resultado-consulta {
+    max-width: 600px;
+    margin: 25px auto 0;
+}
