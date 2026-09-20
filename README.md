@@ -4,7 +4,7 @@
 
 Vida + é o projeto de sistematização número 3 da disciplina de Programação e Desenvolvimento Web.
 
-O **Vida+** é um sistema web desenvolvido para facilitar o agendamento de consultas em uma clínica de saúde.
+É um sistema web desenvolvido para facilitar o agendamento de consultas em uma clínica de saúde.
 
 O sistema permite que o paciente crie uma conta, faça login, escolha um profissional, selecione uma data e horário e acompanhe seus agendamentos.
 
