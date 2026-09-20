@@ -115,4 +115,4 @@ O objetivo do Vida+ é aplicar conceitos de desenvolvimento web por meio da inte
 
 ## Desenvolvido por
 
-Projeto acadêmico desenvolvido por **[SEU NOME]**.
+Projeto acadêmico desenvolvido por **Mariana Rabelo de Farias**.
