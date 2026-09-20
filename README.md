@@ -1,6 +1,6 @@
 # vidamais
 
-# 🏥 Vida+ — Sistema de Agendamento de Consultas
+# Vida+ — Sistema de Agendamento de Consultas
 
 Vida + é o projeto de sistematização número 3 da disciplina de Programação e Desenvolvimento Web.
 
@@ -8,7 +8,7 @@ O **Vida+** é um sistema web desenvolvido para facilitar o agendamento de consu
 
 O sistema permite que o paciente crie uma conta, faça login, escolha um profissional, selecione uma data e horário e acompanhe seus agendamentos.
 
-## 📌 Funcionalidades
+##  Funcionalidades
 
 - Cadastro de usuários
 - Login de usuários
@@ -22,7 +22,7 @@ O sistema permite que o paciente crie uma conta, faça login, escolha um profiss
 - Identificação do usuário logado
 - Proteção dos agendamentos de cada usuário
 
-## 💻 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 ### Front-end
 - HTML5
@@ -64,7 +64,7 @@ vida-mais/
 ├── package.json
 └── README.md
 
-## 🚀 Como executar o projeto
+## Como executar o projeto
 
 ### 1. Instale as dependências
 
@@ -86,7 +86,7 @@ http://localhost:3000
 
 O servidor será executado na porta **3000**.
 
-## 🔄 Funcionamento
+## Funcionamento
 
 1. O usuário realiza seu cadastro.
 2. Faz login no sistema.
@@ -98,7 +98,7 @@ O servidor será executado na porta **3000**.
 8. O usuário pode visualizar ou cancelar seus agendamentos.
 9. Também é possível consultar um agendamento utilizando o CPF.
 
-## 🗂️ API
+## API
 
 O back-end utiliza rotas para realizar operações como:
 
@@ -109,10 +109,10 @@ O back-end utiliza rotas para realizar operações como:
 - Consulta de agendamentos
 - Cancelamento de agendamentos
 
-## 🎯 Objetivo do projeto
+## Objetivo do projeto
 
 O objetivo do Vida+ é aplicar conceitos de desenvolvimento web por meio da integração entre **front-end e back-end**, utilizando uma API desenvolvida com Node.js e Express e arquivos JSON para armazenamento dos dados.
 
-## 👩‍💻 Desenvolvido por
+## Desenvolvido por
 
 Projeto acadêmico desenvolvido por **[SEU NOME]**.
